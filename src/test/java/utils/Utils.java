@@ -1,6 +1,9 @@
 package utils;
 
+import player.Player;
 import student.Student;
+
+import java.util.List;
 
 public class Utils {
 
@@ -11,5 +14,14 @@ public class Utils {
         student.setGrade(grade);
 
         return student;
+    }
+
+    public static Player createPlayer(int age, int experience, List<Integer> skills) {
+        Player player = new Player();
+
+        player.setAge(age);
+        player.setExperience(experience);
+        player.setSkills(skills);
+        return player;
     }
 }
